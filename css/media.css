@@ -1,0 +1,143 @@
+@media (max-width:952px) {
+  nav ul li a {
+      font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  nav {
+      background: #111
+  }
+  .checkbtn{
+      display: block;
+  }
+  nav ul{
+      position: fixed;
+      width: 100%;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    background: rgba(0, 0, 0, 0.8);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+  width: 100%;
+}
+nav ul li a{
+  font-size: 20px;
+}
+nav ul li a:hover {
+  color: #FE4A57;
+  background: none;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+}
+
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+
+.item2 img {
+  width: 50vh;
+  height: 50vh;
+}
+  
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+/************** Navbar ****************/
+    
+
+/************** Head ****************/
+@media(max-width:767px) {
+    #About {
+        flex-direction: column;   
+    }
+    }
+    .item1{
+        width: 400px;
+        margin: 0 20px;
+       
+}
+/************** About ****************/
+@media (max-width: 900px) {
+  .picture { 
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 800px;
+   }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 600px) {
+  .picture {
+     grid-template-columns: repeat(1, 1fr); 
+     margin-bottom: 800px;
+    }
+    .boxTist{
+      flex-direction: column;
+    
+    }
+    .boxTist .person{
+      margin-bottom: 80px;
+    }
+    #Service .content .sev .circle i{
+      width: 40px;
+      height: 40px;
+  }
+  }
+
+
+ @media(max-width:767px) {
+  section.About .flex-con  {
+      flex-direction: column;
+  }
+  #Service .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  #Service .content .sev .circle{
+      width: 150px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+#Tistimonal .boxTist {
+  flex-direction: column;
+  align-items: center;
+}
+
+#Tistimonal .boxTist  .person {
+  margin-bottom: 40px;
+}
+
+  .item2 img{
+      width: 200px;
+      height: 200px;
+  }
+  .contactme{
+      flex-direction: column;
+      
+  }
+}
+/* Now */
+
+
+@media(max-width:767px) {
+  section.Skill h2 {
+      font-size: 20px;
+  }
+}
