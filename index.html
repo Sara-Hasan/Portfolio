@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -14,29 +15,27 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    
 
-    <title> Potofolio Sarah Hasan </title>
+    <title> Sarah Hasan </title>
 </head>
 <body>
+<!-- Navbar -->
+<nav>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"><a href="index.html"> <i class="fas fa-code"></i> SARAH HASAN </a> </label>
+    <ul>
+        <li> <a href="#About"> About me  </a> </li>
+        <li> <a href="#Skill">  Skills </a></li>
+        <li> <a href="#Service">  Services </a></li>
+        <li> <a href="#Portfolio">  Portofolio </a></li>
+        <li> <a class="contact" href="#Contact">  Contact me </a></li>
+    </ul>
+  </nav>
 
-    <nav class="text-center" id="mainav">
-        <div class="container">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li> <a href="#About"> About us  </a> </li>
-                <li> <a href="#Skills">  Skills </a></li>
-                <li> <a href="#Service">  Services </a></li>
-                <li> <a href="#Portfolio">  Portofolio </a></li>
-                <li> <a class="contact" href="#Contact">  Contact me </a></li>
-            </ul>
-        </div>
-    </nav>
-
-
+<!-- home -->
 
     <header>
         <div class="header">
@@ -46,14 +45,14 @@
                 <div class="line"></div>
                 <h3> Full Stack Developer </h3>
                 <div class="buttons">
-                    <div class="button"> <a href="Cv-saraLast.pdf"> DOWNLOAD CV </a> </div>
-                    <div class="button"> <a href="#"> PORTOFOLIO </a> </div>
+                    <div class="button"> <a href="Cv-saraLast.pdf" target="_blank"> DOWNLOAD CV </a> </div>
+                    <div class="button"> <a href="#Portfolio" > PORTOFOLIO </a> </div>
                 </div>
             </div>
         </div>  
     </header>
 
-
+<!-- About -->
     <section id="About" class="About" >
         <div class="container">
                 <div class="flex-con">
@@ -66,14 +65,14 @@
                         </p>
                         <div class="info">
                         <div class="item2">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope"></i> 
                             <i class="fas fa-phone-square"></i>
                             <i class="fas fa-city"></i>
                         </div>
                         <div class="item3">
-                            <h6>sara_hab99@yahoo.com </h6>
+                            <h6>sara.ahabash@gmail.com </h6>
                             <h6>+962 788 134 277</h6>
-                            <h6> Jordan-Amman</h6>
+                            <h6> Zarqa-Jordan</h6>
                         </div>
                         </div>
                     </div>
@@ -84,7 +83,7 @@
         </div>
     </section>
 
-
+<!-- Services -->
 
     <section id="Service">
         <div class="container">
@@ -92,7 +91,7 @@
             <div class="content">
                 <div class="sev">
                     <div class="circle"> <i class="fas fa-laptop-code"></i> </div>
-                    <h3>WEB DEVELOPE</h3>
+                    <h3>WEB DEVELOP</h3>
                 </div>
                 <div class="sev">
                     <div class="circle"> <i class="fas fa-paint-brush"></i> </div>
@@ -106,23 +105,27 @@
             </div>
         </div> 
     </section>
-
+<!-- Skills -->
     <section class="Skill" id="Skill">
         <div class="container">
             <h1> SKILLS </h1> 
             <div class="myskill">
-                <h2> HTML </h2>
-                <div class="backline"> <div class="linee a1">   </div></div>
-                <h2> HTML5 </h2>
+                <h2> <i class="fab fa-html5"></i> </h2>
                 <div class="backline"> <div class="linee a2">   </div></div>
-                <h2> CSS </h2>
-                <div class="backline"> <div class="linee a3">   </div></div>
-                <h2> CSS3 </h2>
+                <h2> <i class="fab fa-css3-alt"></i> </h2>
                 <div class="backline"> <div class="linee a4">   </div></div>
-                <h2> PHP </h2>
+                <h2> <i class="fab fa-php"></i> </h2>
                 <div class="backline"> <div class="linee a5">   </div></div>
-                <h2> MYSQL </h2>
+                <h2> <i class="fas fa-database"></i> </h2>
                 <div class="backline"> <div class="linee a6">   </div></div>
+                <h2> <i class="fab fa-js-square"></i> </h2>
+                <div class="backline"> <div class="linee a4">   </div></div>
+                <h2> <i class="fab fa-wordpress"></i> </h2>
+                <div class="backline"> <div class="linee a4">   </div></div>
+                <h2> <i class="fab fa-react"></i> </h2>
+                <div class="backline"> <div class="linee a4">   </div></div>
+                <h2> <i class="fab fa-laravel"></i> </h2>
+                <div class="backline"> <div class="linee a4">   </div></div>
             </div>
         </div>
     </section>
@@ -132,35 +135,58 @@
         <div class="container">
             <h1> PORTOFOLIO </h1>
             <div class="picture">
-
                 <div class="container1">
-                    <a href="https://sarah-yourtouch.000webhostapp.com/">
-                        <img src="img/pexels-photo-01.jpeg" alt="YourTouch" class="image"/>
+                    <a href="https://sarah-yourtouch.000webhostapp.com/" target="_blank">
+                        <img src="img/pexels-photo-07.jpeg" alt="YourTouch" class="image"/>
+                        <div class="over">
+                            <div class="text">graduation project</div>
+                            <div class="text">Online store</div>
+                        </div>
                     </a>
                 </div>
                 <div class="container1">
-                    <a href="https://sarah-yourtouch.000webhostapp.com/">
+                    <a href="https://sarah-yourtouch.000webhostapp.com/" target="_blank">
                         <img src="img/pexels-photo-02.jpeg" alt="YourTouch" class="image"/>
+                        <div class="over">
+                            <div class="text"> project</div>
+                            <div class="text">Web Development</div>
+                        </div>
                     </a>
                 </div>
                 <div class="container1">
-                    <a href="https://sarah-yourtouch.000webhostapp.com/">
+                    <a href="https://sarah-yourtouch.000webhostapp.com/" target="_blank">
                         <img src="img/pexels-photo-03.jpeg" alt="YourTouch" class="image"/>
+                        <div class="over">
+                            <div class="text"> project</div>
+                            <div class="text">Web Development</div>
+                        </div>
                     </a>
                 </div>
                 <div class="container1">
-                    <a href="https://sarah-yourtouch.000webhostapp.com/">
+                    <a href="https://sarah-yourtouch.000webhostapp.com/" target="_blank">
                         <img src="img/pexels-photo-04.jpeg" alt="YourTouch" class="image"/>
+                        <div class="over">
+                            <div class="text"> project</div>
+                            <div class="text">Web Development</div>
+                        </div>
                     </a>
                 </div>
                 <div class="container1">
-                    <a href="https://sarah-yourtouch.000webhostapp.com/">
+                    <a href="https://sarah-yourtouch.000webhostapp.com/" target="_blank">
                         <img src="img/pexels-photo-05.jpg" alt="YourTouch" class="image"/>
+                        <div class="over">
+                            <div class="text"> project</div>
+                            <div class="text">Web Development</div>
+                        </div>
                     </a>
                 </div>
                 <div class="container1">
-                    <a href="https://sarah-yourtouch.000webhostapp.com/">
+                    <a href="https://sarah-yourtouch.000webhostapp.com/" target="_blank">
                         <img src="img/pexels-photo-06.jpg" alt="YourTouch" class="image"/>
+                        <div class="over">
+                            <div class="text"> project</div>
+                            <div class="text">Web Development</div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -217,21 +243,14 @@
             <h2> Sarah Hasan </h2>
             <div class="line"> </div>
             <div class="Account"> 
-                <a href="https://www.linkedin.com/in/sarah-alhabash-%D8%B3-a569201ab/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Sara-Hasan"><i class="fab fa-github-alt"></i></a>
-                <a href=""><i class="fas fa-at"></i></a>
+                <a href="https://www.linkedin.com/in/sarah-alhabash-%D8%B3-a569201ab/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Sara-Hasan" target="_blank"><i class="fab fa-github-alt" target="_blank"></i></a>
+                <a href=""><i class="fas fa-at" target="_blank"></i></a>
             </div>
             <hr>
             <p>  Copyright © Sarah Hasan 2021 </p>
         </div>  
     </footer>
-
-
-
-
-
-
-
 
     <script type='text/javascript'>
         //<![CDATA[
@@ -243,5 +262,5 @@
         <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css' rel='stylesheet'/>
         </noscript>
 
-</body>
+    </body>
 </html>

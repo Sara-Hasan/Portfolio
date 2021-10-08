@@ -63,93 +63,118 @@ header{
     width: 100%;
 
 }
-
-
 .header{
     background: rgba(0,0,0,0.5);
     height: 600px;
     width: 100%;
 }
 /************** Nav ****************/
+
 nav {
-    color: #fff;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
     background: rgba(0, 0, 0, 0.8);
-    width: 100%; 
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    position: fixed;
     z-index: 1;
 }
+label.logo {
+    color: #FE4A57;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: 1500;
+}
+label.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+label.logo i{
+    color: #FE4A57;
+}
 nav ul {
-    margin: 0;
-    width: 100%; 
-    padding: 19px 0;
+    float: right;
+    margin-right: 20px;
 }
 nav ul li {
-    color: #FEC107;
-    font-size: 18px;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
+
 nav ul li a {
     color: #fff;
-    padding: 20px;
-    text-align: center;
-}    
-nav ul li a:hover {
-    color: #fff;
-    background-color: #666;
-} 
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: #FE4A57;
+    padding-bottom: 7px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+    transition: .5s;
+}
 .checkbtn {
     font-size: 30px;
     color: #fff;
     float: right;
-    margin: 25px;
+    line-height: 80px;
+    margin-right: 40px;
     cursor: pointer;
     display: none;
-} 
+}
 #check {
     display: none;
 }
 
-@media (max-width:952px) {
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+
     nav ul li a {
         font-size: 16px;
     }
 }
-@media (max-width: 858px){
-    nav {
-        background: #111
-    }
-    .checkbtn{
+
+@media (max-width: 858px) {
+    .checkbtn {
         display: block;
     }
-    nav ul{
+
+    ul {
         position: fixed;
         width: 100%;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
-        background: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
         top: 80px;
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-    width: 100%;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  nav ul li a:hover {
-    color: #FEC107;
-    background: none;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        color: #FE4A57;
+        padding-bottom: 7px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
 }
+
+/* Made by Coding Room */
 
 /************** Head ****************/
 header .head{
@@ -210,7 +235,7 @@ section.About .flex-con > div {
     padding: 10px;
 }
 section.About .item1 {
-    flex: 50%
+    flex: 40%
 }
 section.About .flex-con .item2 { 
     font-weight: 700
@@ -219,20 +244,32 @@ section.About .info {
     display: flex;
     flex: 40%;
     margin-top: 30px;
+    width: 25%;
 }
-section.About .item2 {
-    flex: 50%
+section .About .info .item2 h6{
+    display: inline;
 }
-section.About .item3 {
-    flex: 50%
+section.About .info .item2 {
+    flex: 50%;
+    text-align: right;
+    margin-right: 30px;
+}
+section.About .info .item3 {
+    flex: 50%;
+    text-align: left;
 }
 section.About .item2 i{
    display: block;
    padding:5px 5px;
    color: #FE4A57;
 }
+section.About .item2 i:nth-of-type(3){
+margin-right: -4px;
+}
 .item2 img{
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    width: 370px;
+    height: 370px;
 }
 
 
@@ -265,7 +302,7 @@ section.About .item2 i{
 }
 .circle i{
     color: #FE4A57;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 250px;
 }
 #Service h3{
@@ -275,36 +312,23 @@ section.About .item2 i{
 }
     
 /************** Skills ****************/
-
-
-.skill h2{
-    color: #fff; 
-    padding: 0 70px;
-}
-.skill h2:nth-of-type(1){
-    margin-top: 100px;
-}
-.skill h2:nth-of-type(2){
-    padding-left: 100px;
-}
-.skill h2:nth-of-type(5){
-    margin-top: 100px;
-    margin-left: 120px;
-}
-
 section.Skill {
     padding: 80px 0px 50px 0px;
     background-color: #282A39;
 }
 section.Skill .myskill {
     box-shadow: 0px 5px 25px 0px rgb(0 , 0, 0, 0.2);
-    padding: 50px
+    padding: 50px;
 }
 section.Skill h2 {
     color: #fff;
     line-height: 2.5;
     font-size: 25px;
     text-align: left;
+}
+section.Skill h2 span{
+    font-size: 16px;
+    text-transform: lowercase;
 }
 section.Skill h2:first-of-type {
     line-height: 1;
@@ -328,10 +352,10 @@ section.Skill .backline .a4{
     width: 80%;
 }
 section.Skill .backline .a5{
-    width: 60%;
+    width: 80%;
 }
 section.Skill .backline .a6{
-    width: 60%;
+    width: 80%;
 }
 section.Skill .backline .linee {
     border-radius: 20px;
@@ -363,7 +387,38 @@ section.Skill .backline .linee {
     height: 220px;
     border: 2px solid #fff;
 }
-
+section .container1 {
+    position: relative;
+    margin: auto; 
+    width: 300px;
+    height: 220px;
+} 
+.over {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.container1:hover .over {
+    opacity: 1;
+    background: rgba(0,0,0,0.5);
+}
+.text {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+}
+.text:first-of-type {
+    top: 50%; 
+}
+.text:last-of-type {
+    top: 60%;
+}
 /************** Tistimonal ****************/
 
 #Tistimonal{
@@ -445,15 +500,16 @@ section.Skill .backline .linee {
 #Contact{
     background-color: #323647;
     color: #fff;
+    padding: 90px 0 50px 0;
 }
 .contactme{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .cont{
-    margin: 0 120px;
-    text-align: center;
+    justify-content: space-around;
+    display: flex;
 }
 .icon{
     width: 100px;
@@ -462,18 +518,6 @@ section.Skill .backline .linee {
     border-radius: 50%;
     text-align: center;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    
-}
-.icon:nth-of-type(2) {
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cont i:hover {
-    color: #fff;
 }
 .cont i{
     color: #FE4A57;
@@ -481,20 +525,19 @@ section.Skill .backline .linee {
     line-height: 100px;
 }
 .cont p{
+    font-size: 16px;
     text-align: center;
-    font-size: 15px;
     color: rgb(247, 233, 233);
     margin-top: 40px;
+    margin-left: 20px;
 }
 .cont h2{
     text-align: center; 
 }
 
 /************** Footer ****************/
-
 footer{
     background-color: #282A39;
-    height: 300px;
     text-align: center;
     padding: 40px;
     color: #FFF;
@@ -517,7 +560,7 @@ footer .Account i{
     line-height: 55px;
 }
 footer a{
-    color: #fff;
+    color: rgba(221, 221, 221, 0.767);
 }
 footer a:hover{
     color: #fff;
